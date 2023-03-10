@@ -26,6 +26,8 @@ from datetime import datetime
 #Is this really worth! (positive)
 #% Reached end of topic produce-topic [0] at offset 2
 
+os.environ['TRANSFORMERS_CACHE'] = '/app/cache/'
+
 bootstrap_servers = ['XXXXXXXXXX.kafka.rhcloud.com:443']
 topic = 'consume-topic'
 produce_topic = 'produce-topic'
